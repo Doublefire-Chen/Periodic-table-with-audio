@@ -1,0 +1,2329 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+h2 {
+margin: 0;
+padding: 0;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    font-family:Arial;
+}
+th, td {
+    text-align: left;
+}
+
+td {
+max-width:0;
+max-height:0;
+}
+
+.first {
+width:100%;
+margin-bottom:2%;
+
+}
+
+.second {
+width:80%;
+margin-left:14%;
+margin-right:6%;
+margin-bottom:2%;
+}
+
+.third {
+width:60%;
+margin-left:22%;
+margin-right:18%;
+
+}
+.third_row {
+font-size: 2vw;
+}
+
+div {
+border: solid 1px black;
+padding: 1%;
+
+
+
+}
+
+number {
+display: block;
+font-size:0.65vw;
+}
+
+element {
+display: block;
+font-size:2.5vw;
+font-weight:bold;
+text-align:center;
+
+}
+
+element_name {
+display: block;
+font-size:0.65vw;
+text-align:center;
+
+}
+
+
+atomic_number {
+display: block;
+font-size:0.65vw;
+font-weight:bold;
+text-align:center;
+}
+
+.single_line {
+padding-top: 10%;
+padding-bottom: 10%;
+}
+
+.third_div {
+padding-top:14%;
+max-height: 1.4em;
+min-height: 1.4em;
+font-weight: bold;
+
+}
+
+.element_mini {
+font-size:1vw;
+}
+
+.red {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, white, red); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, white, red); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, white, red); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, white, red); /* Standard syntax */
+}
+
+
+.orange {
+  background: orange; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, white, orange); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, white, orange); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, white, orange); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, white, orange); /* Standard syntax */
+}
+
+.yellow {
+  background: yellow; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, white, yellow); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, white, yellow); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, white, yellow); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, white, yellow); /* Standard syntax */
+}
+
+.green {
+  background: green; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, white, green); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, white, green); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, white, green); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, white, green); /* Standard syntax */
+}
+
+.cyan {
+  background: cyan; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, white, cyan); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, white, cyan); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, white, cyan); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, white, cyan); /* Standard syntax */
+}
+
+.blue {
+  background: blue; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, white, blue); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, white, blue); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, white, blue); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, white, blue); /* Standard syntax */
+}
+
+.lavender {
+  background: #EE82EE; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, white, #EE82EE); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, white, #EE82EE); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, white, #EE82EE); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, white, #EE82EE); /* Standard syntax */
+}
+
+.violet {
+  background: purple; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, white, purple); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, white, purple); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, white, purple); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, white, purple); /* Standard syntax */
+}
+
+.pink {
+  background: #DB7093; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, white, #DB7093); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, white, #DB7093); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, white, #DB7093); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, white, #DB7093); /* Standard syntax */
+}
+
+.magenta {
+  background: #ff003f; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, white, #ff003f); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, white, #ff003f); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, white, #ff003f); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, white, #ff003f); /* Standard syntax */
+}
+
+</style>
+</head>
+<body>
+   <script>
+  function H() 
+  {var audio = document.getElementById("1");audio.play();}
+  function He() 
+  {var audio = document.getElementById("2");audio.play();}
+  function Li() 
+  {var audio = document.getElementById("3");audio.play();}
+  function Be() 
+  {var audio = document.getElementById("4");audio.play();}
+  function B() 
+  {var audio = document.getElementById("5");audio.play();}
+  function C() 
+  {var audio = document.getElementById("6");audio.play();}
+  function N() 
+  {var audio = document.getElementById("7");audio.play();}
+  function O() 
+  {var audio = document.getElementById("8");audio.play();}
+  function F() 
+  {var audio = document.getElementById("9");audio.play();}
+  function Ni() 
+  {var audio = document.getElementById("10");audio.play();}
+  function Na() 
+  {var audio = document.getElementById("11");audio.play();}
+  function Mg() 
+  {var audio = document.getElementById("12");audio.play();}
+  function Al() 
+  {var audio = document.getElementById("13");audio.play();}
+  function Si() 
+  {var audio = document.getElementById("14");audio.play();}
+  function P() 
+  {var audio = document.getElementById("15");audio.play();}
+  function S() 
+  {var audio = document.getElementById("16");audio.play();}
+  function Cl() 
+  {var audio = document.getElementById("17");audio.play();}
+  function Ar() 
+  {var audio = document.getElementById("18");audio.play();}
+  function K() 
+  {var audio = document.getElementById("19");audio.play();}
+  function Ca() 
+  {var audio = document.getElementById("20");audio.play();}
+  function Sc() 
+  {var audio = document.getElementById("21");audio.play();}
+  function Ti() 
+  {var audio = document.getElementById("22");audio.play();}
+  function V() 
+  {var audio = document.getElementById("23");audio.play();}
+  function Cr() 
+  {var audio = document.getElementById("24");audio.play();}
+  function Mn() 
+  {var audio = document.getElementById("25");audio.play();}
+  function Fe() 
+  {var audio = document.getElementById("26");audio.play();}
+  function Co() 
+  {var audio = document.getElementById("27");audio.play();}
+  function Ni() 
+  {var audio = document.getElementById("28");audio.play();}
+  function Cu() 
+  {var audio = document.getElementById("29");audio.play();}
+  function Zn() 
+  {var audio = document.getElementById("30");audio.play();}
+  function Ga() 
+  {var audio = document.getElementById("31");audio.play();}
+  function Ge() 
+  {var audio = document.getElementById("32");audio.play();}
+  function As() 
+  {var audio = document.getElementById("33");audio.play();}
+  function Se() 
+  {var audio = document.getElementById("34");audio.play();}
+  function Br() 
+  {var audio = document.getElementById("35");audio.play();}
+  function Kr() 
+  {var audio = document.getElementById("36");audio.play();}
+  function Rb() 
+  {var audio = document.getElementById("37");audio.play();}
+  function Sr() 
+  {var audio = document.getElementById("38");audio.play();}
+  function Y() 
+  {var audio = document.getElementById("39");audio.play();}
+  function Zr() 
+  {var audio = document.getElementById("40");audio.play();}
+  function Nb() 
+  {var audio = document.getElementById("41");audio.play();}
+  function Mo() 
+  {var audio = document.getElementById("42");audio.play();}
+  function Tc() 
+  {var audio = document.getElementById("43");audio.play();}
+  function Ru() 
+  {var audio = document.getElementById("44");audio.play();}
+  function Rh() 
+  {var audio = document.getElementById("45");audio.play();}
+  function Pd() 
+  {var audio = document.getElementById("46");audio.play();}
+  function Ag() 
+  {var audio = document.getElementById("47");audio.play();}
+  function Cd() 
+  {var audio = document.getElementById("48");audio.play();}
+  function In() 
+  {var audio = document.getElementById("49");audio.play();}
+  function Sn() 
+  {var audio = document.getElementById("50");audio.play();}
+  function Sb() 
+  {var audio = document.getElementById("51");audio.play();}
+  function Te() 
+  {var audio = document.getElementById("52");audio.play();}
+  function I() 
+  {var audio = document.getElementById("53");audio.play();}
+  function Xe() 
+  {var audio = document.getElementById("54");audio.play();}
+  function Cs() 
+  {var audio = document.getElementById("55");audio.play();}
+  function Ba() 
+  {var audio = document.getElementById("56");audio.play();}
+  function La() 
+  {var audio = document.getElementById("57");audio.play();}
+  function Ce() 
+  {var audio = document.getElementById("58");audio.play();}
+  function Pr() 
+  {var audio = document.getElementById("59");audio.play();}
+  function Nd() 
+  {var audio = document.getElementById("60");audio.play();}
+  function Pm() 
+  {var audio = document.getElementById("61");audio.play();}
+  function Sm() 
+  {var audio = document.getElementById("62");audio.play();}
+  function Eu() 
+  {var audio = document.getElementById("63");audio.play();}
+  function Gd() 
+  {var audio = document.getElementById("64");audio.play();}
+  function Tb() 
+  {var audio = document.getElementById("65");audio.play();}
+  function Dy() 
+  {var audio = document.getElementById("66");audio.play();}
+  function Ho() 
+  {var audio = document.getElementById("67");audio.play();}
+  function Er() 
+  {var audio = document.getElementById("68");audio.play();}
+  function Tm() 
+  {var audio = document.getElementById("69");audio.play();}
+  function Yd() 
+  {var audio = document.getElementById("70");audio.play();}
+  function Lu() 
+  {var audio = document.getElementById("71");audio.play();}
+  function Hf() 
+  {var audio = document.getElementById("72");audio.play();}
+  function Ta() 
+  {var audio = document.getElementById("73");audio.play();}
+  function W() 
+  {var audio = document.getElementById("74");audio.play();}
+  function Re() 
+  {var audio = document.getElementById("75");audio.play();}
+  function Os() 
+  {var audio = document.getElementById("76");audio.play();}
+  function Ir() 
+  {var audio = document.getElementById("77");audio.play();}
+  function Pt() 
+  {var audio = document.getElementById("78");audio.play();}
+  function Au() 
+  {var audio = document.getElementById("79");audio.play();}
+  function Hg() 
+  {var audio = document.getElementById("80");audio.play();}
+  function Tl() 
+  {var audio = document.getElementById("81");audio.play();}
+  function Pb() 
+  {var audio = document.getElementById("82");audio.play();}
+  function Bi() 
+  {var audio = document.getElementById("83");audio.play();}
+  function Po() 
+  {var audio = document.getElementById("84");audio.play();}
+  function At() 
+  {var audio = document.getElementById("85");audio.play();}
+  function Rn() 
+  {var audio = document.getElementById("86");audio.play();}
+  function Fr() 
+  {var audio = document.getElementById("87");audio.play();}
+  function Ra() 
+  {var audio = document.getElementById("88");audio.play();}
+  function Ac() 
+  {var audio = document.getElementById("89");audio.play();}
+  function Th() 
+  {var audio = document.getElementById("90");audio.play();}
+  function Pa() 
+  {var audio = document.getElementById("91");audio.play();}
+  function U() 
+  {var audio = document.getElementById("92");audio.play();}
+  function Np() 
+  {var audio = document.getElementById("93");audio.play();}
+  function Pu() 
+  {var audio = document.getElementById("94");audio.play();}
+  function Am() 
+  {var audio = document.getElementById("95");audio.play();}
+  function Cm() 
+  {var audio = document.getElementById("96");audio.play();}
+  function Bk() 
+  {var audio = document.getElementById("97");audio.play();}
+  function Cf() 
+  {var audio = document.getElementById("98");audio.play();}
+  function Es() 
+  {var audio = document.getElementById("99");audio.play();}
+  function Fm() 
+  {var audio = document.getElementById("100");audio.play();}
+  function Md() 
+  {var audio = document.getElementById("101");audio.play();}
+  function No() 
+  {var audio = document.getElementById("102");audio.play();}
+  function Lr() 
+  {var audio = document.getElementById("103");audio.play();}
+  function Rf() 
+  {var audio = document.getElementById("104");audio.play();}
+  function Db() 
+  {var audio = document.getElementById("105");audio.play();}
+  function Sg() 
+  {var audio = document.getElementById("106");audio.play();}
+  function Bh() 
+  {var audio = document.getElementById("107");audio.play();}
+  function Hs() 
+  {var audio = document.getElementById("108");audio.play();}
+  function Mt() 
+  {var audio = document.getElementById("109");audio.play();}
+  function Ds() 
+  {var audio = document.getElementById("110");audio.play();}
+  function Rg() 
+  {var audio = document.getElementById("111");audio.play();}
+  function Cn() 
+  {var audio = document.getElementById("112");audio.play();}
+  function Nh() 
+  {var audio = document.getElementById("113");audio.play();}
+  function Fl() 
+  {var audio = document.getElementById("114");audio.play();}
+  function Mc() 
+  {var audio = document.getElementById("115");audio.play();}
+  function Lv() 
+  {var audio = document.getElementById("116");audio.play();}
+  function Ts() 
+  {var audio = document.getElementById("117");audio.play();}
+  function Og() 
+  {var audio = document.getElementById("118");audio.play();}
+
+    </script>
+
+
+<audio id="1" src="audio/H.mp3"></audio>
+<audio id="2" src="audio/He.mp3"></audio>
+<audio id="3" src="audio/Li.mp3"></audio>
+<audio id="4" src="audio/Be.mp3"></audio>
+<audio id="5" src="audio/B.mp3"></audio>
+<audio id="6" src="audio/C.mp3"></audio>
+<audio id="7" src="audio/N.mp3"></audio>
+<audio id="8" src="audio/O.mp3"></audio>
+<audio id="9" src="audio/F.mp3"></audio>
+<audio id="10" src="audio/N.mp3"></audio>
+<audio id="11" src="audio/Na.mp3"></audio>
+<audio id="12" src="audio/Mg.mp3"></audio>
+<audio id="13" src="audio/Al.mp3"></audio>
+<audio id="14" src="audio/Si.mp3"></audio>
+<audio id="15" src="audio/P.mp3"></audio>
+<audio id="16" src="audio/S.mp3"></audio>
+<audio id="17" src="audio/Cl.mp3"></audio>
+<audio id="18" src="audio/Ar.mp3"></audio>
+<audio id="19" src="audio/K.mp3"></audio>
+<audio id="20" src="audio/Ca.mp3"></audio>
+<audio id="21" src="audio/Sc.mp3"></audio>
+<audio id="22" src="audio/Ti.mp3"></audio>
+<audio id="23" src="audio/V.mp3"></audio>
+<audio id="24" src="audio/Cr.mp3"></audio>
+<audio id="25" src="audio/Mn.mp3"></audio>
+<audio id="26" src="audio/Fe.mp3"></audio>
+<audio id="27" src="audio/Co.mp3"></audio>
+<audio id="28" src="audio/Ni.mp3"></audio>
+<audio id="29" src="audio/Cu.mp3"></audio>
+<audio id="30" src="audio/Zn.mp3"></audio>
+<audio id="31" src="audio/Ga.mp3"></audio>
+<audio id="32" src="audio/Ge.mp3"></audio>
+<audio id="33" src="audio/As.mp3"></audio>
+<audio id="34" src="audio/Se.mp3"></audio>
+<audio id="35" src="audio/Br.mp3"></audio>
+<audio id="36" src="audio/Kr.mp3"></audio>
+<audio id="37" src="audio/Rb.mp3"></audio>
+<audio id="38" src="audio/Sr.mp3"></audio>
+<audio id="39" src="audio/Y.mp3"></audio>
+<audio id="40" src="audio/Zr.mp3"></audio>
+<audio id="41" src="audio/Nb.mp3"></audio>
+<audio id="42" src="audio/Mo.mp3"></audio>
+<audio id="43" src="audio/Tc.mp3"></audio>
+<audio id="44" src="audio/Ru.mp3"></audio>
+<audio id="45" src="audio/Rh.mp3"></audio>
+<audio id="46" src="audio/Pd.mp3"></audio>
+<audio id="47" src="audio/Ag.mp3"></audio>
+<audio id="48" src="audio/Cd.mp3"></audio>
+<audio id="49" src="audio/In.mp3"></audio>
+<audio id="50" src="audio/Sn.mp3"></audio>
+<audio id="51" src="audio/Sb.mp3"></audio>
+<audio id="52" src="audio/Te.mp3"></audio>
+<audio id="53" src="audio/I.mp3"></audio>
+<audio id="54" src="audio/Xe.mp3"></audio>
+<audio id="55" src="audio/Cs.mp3"></audio>
+<audio id="56" src="audio/Ba.mp3"></audio>
+<audio id="57" src="audio/La.mp3"></audio>
+<audio id="58" src="audio/Ce.mp3"></audio>
+<audio id="59" src="audio/Pr.mp3"></audio>
+<audio id="60" src="audio/Nd.mp3"></audio>
+<audio id="61" src="audio/Pm.mp3"></audio>
+<audio id="62" src="audio/Sm.mp3"></audio>
+<audio id="63" src="audio/Eu.mp3"></audio>
+<audio id="64" src="audio/Gd.mp3"></audio>
+<audio id="65" src="audio/Tb.mp3"></audio>
+<audio id="66" src="audio/Dy.mp3"></audio>
+<audio id="67" src="audio/Ho.mp3"></audio>
+<audio id="68" src="audio/Er.mp3"></audio>
+<audio id="69" src="audio/Tm.mp3"></audio>
+<audio id="70" src="audio/Yd.mp3"></audio>
+<audio id="71" src="audio/Lu.mp3"></audio>
+<audio id="72" src="audio/Hf.mp3"></audio>
+<audio id="73" src="audio/Ta.mp3"></audio>
+<audio id="74" src="audio/W.mp3"></audio>
+<audio id="75" src="audio/Re.mp3"></audio>
+<audio id="76" src="audio/Os.mp3"></audio>
+<audio id="77" src="audio/Ir.mp3"></audio>
+<audio id="78" src="audio/Pt.mp3"></audio>
+<audio id="79" src="audio/Au.mp3"></audio>
+<audio id="80" src="audio/Hg.mp3"></audio>
+<audio id="81" src="audio/Tl.mp3"></audio>
+<audio id="82" src="audio/Pb.mp3"></audio>
+<audio id="83" src="audio/Bi.mp3"></audio>
+<audio id="84" src="audio/Po.mp3"></audio>
+<audio id="85" src="audio/At.mp3"></audio>
+<audio id="86" src="audio/Rn.mp3"></audio>
+<audio id="87" src="audio/Fr.mp3"></audio>
+<audio id="88" src="audio/Ra.mp3"></audio>
+<audio id="89" src="audio/Ac.mp3"></audio>
+<audio id="90" src="audio/Th.mp3"></audio>
+<audio id="91" src="audio/Pa.mp3"></audio>
+<audio id="92" src="audio/U.mp3"></audio>
+<audio id="93" src="audio/Np.mp3"></audio>
+<audio id="94" src="audio/Pu.mp3"></audio>
+<audio id="95" src="audio/Am.mp3"></audio>
+<audio id="96" src="audio/Cm.mp3"></audio>
+<audio id="97" src="audio/Bk.mp3"></audio>
+<audio id="98" src="audio/Cf.mp3"></audio>
+<audio id="99" src="audio/Es.mp3"></audio>
+<audio id="100" src="audio/Fm.mp3"></audio>
+<audio id="101" src="audio/Md.mp3"></audio>
+<audio id="102" src="audio/No.mp3"></audio>
+<audio id="103" src="audio/Lr.mp3"></audio>
+<audio id="104" src="audio/Rf.mp3"></audio>
+<audio id="105" src="audio/Db.mp3"></audio>
+<audio id="106" src="audio/Sg.mp3"></audio>
+<audio id="107" src="audio/Bh.mp3"></audio>
+<audio id="108" src="audio/Hs.mp3"></audio>
+<audio id="109" src="audio/Mt.mp3"></audio>
+<audio id="110" src="audio/Ds.mp3"></audio>
+<audio id="111" src="audio/Rg.mp3"></audio>
+<audio id="112" src="audio/Cn.mp3"></audio>
+<audio id="113" src="audio/Nh.mp3"></audio>
+<audio id="114" src="audio/Fl.mp3"></audio>
+<audio id="115" src="audio/Mc.mp3"></audio>
+<audio id="116" src="audio/Lv.mp3"></audio>
+<audio id="117" src="audio/Ts.mp3"></audio>
+<audio id="118" src="audio/Og.mp3"></audio>
+
+<table class="first">
+  <tr>
+  	<td>
+    	<div class="blue" onclick="H()">
+    		<number>
+            1
+            </number>
+            <element>
+            H
+            </element>
+            <element_name>
+            Hydrogen
+            </element_name>
+            <atomic_number>
+            1.008
+            </atomic_number>
+    	</div>
+    </td>
+    <td colspan="16"><center><h2>Periodic Table of Elements</h2></center></td>
+    <td><div class="violet" onclick="He()">
+    		<number>
+            2
+            </number>
+            <element>
+            He
+            </element>
+            <element_name>
+            Helium
+            </element_name>
+            <atomic_number>
+            4.003
+            </atomic_number>
+    	</div></td>
+  </tr>
+  <tr>
+    <td><div class="red" onclick="Li()">
+    		<number>
+            3
+            </number>
+            <element>
+            Li
+            </element>
+            <element_name>
+            Lithium
+            </element_name>
+            <atomic_number>
+            6.941
+            </atomic_number>
+    	</div></td>
+    <td><div class="orange" onclick="Be()">
+    		<number>
+            4
+            </number>
+            <element>
+            Be
+            </element>
+            <element_name>
+            Berylium
+            </element_name>
+            <atomic_number>
+            9.012
+            </atomic_number>
+    	</div></td>
+    <td colspan="10"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=https://github.com/KyleFDowney/Periodic_table.git >主体框架代码来源链接</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=http://pronounceeverything.com/Periodic%20Table%20of%20Elements/Periodic%20Table%20of%20Elements_100.htm>音频来源链接</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;代码修改by：Doublefire.Chen</td></p>
+    <td><div class="cyan" onclick="B()">
+    		<number>
+            5
+            </number>
+            <element>
+            B
+            </element>
+            <element_name>
+            Boron
+            </element_name>
+            <atomic_number>
+            10.881
+            </atomic_number>
+    	</div></td>
+    <td><div class="blue" onclick="C()">
+    		<number>
+            6
+            </number>
+            <element>
+            C
+            </element>
+            <element_name>
+            Carbon
+            </element_name>
+            <atomic_number>
+            12.011
+            </atomic_number>
+    	</div></td>
+    <td><div class="blue" onclick="N()">
+    		<number>
+            7
+            </number>
+            <element>
+            N
+            </element>
+            <element_name>
+            Nitrogen
+            </element_name>
+            <atomic_number>
+            14.007
+            </atomic_number>
+    	</div></td>
+    <td><div class="blue" onclick="O()">
+    		<number>
+            8
+            </number>
+            <element>
+            O
+            </element>
+            <element_name>
+            Oxygen
+            </element_name>
+            <atomic_number>
+            15.999
+            </atomic_number>
+    	</div></td>
+    <td><div class="lavender" onclick="F()">
+    		<number>
+            9
+            </number>
+            <element>
+            F
+            </element>
+            <element_name>
+            Fluorine
+            </element_name>
+            <atomic_number>
+            18.998
+            </atomic_number>
+    	</div></td>
+    <td><div class="violet" onclick="Ne()">
+    		<number>
+            10
+            </number>
+            <element>
+            Ne
+            </element>
+            <element_name>
+            Neon
+            </element_name>
+            <atomic_number>
+            20.180
+            </atomic_number>
+    	</div></td>
+  </tr>
+    <tr>
+    <td><div class="red" onclick="Na()">
+    		<number>
+            11
+            </number>
+            <element>
+            Na
+            </element>
+            <element_name>
+            Sodium
+            </element_name>
+            <atomic_number>
+            22.990
+            </atomic_number>
+    	</div></td>
+    <td><div class="orange" onclick="Mg()">
+    		<number>
+            12
+            </number>
+            <element>
+            Mg
+            </element>
+            <element_name>
+            Magnesium
+            </element_name>
+            <atomic_number>
+            24.305
+            </atomic_number>
+    	</div></td>
+    <td colspan="10"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这是一个非盈利项目，仅用于学习交流，禁止用于任何商业活动&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=https://github.com/pkuchenyan/Periodic-table-with-audio.git>本项目源代码</a> </p></td>
+    <td><div class="green" onclick="Al()">
+    		<number>
+            13
+            </number>
+            <element>
+            Al
+            </element>
+            <element_name>
+            Aluminium
+            </element_name>
+            <atomic_number>
+            26.982
+            </atomic_number>
+    	</div></td>
+    <td><div class="cyan" onclick="Si()">
+    		<number>
+            14
+            </number>
+            <element>
+            Si
+            </element>
+            <element_name>
+            Silicon
+            </element_name>
+            <atomic_number>
+            28.086
+            </atomic_number>
+    	</div></td>
+    <td><div class="blue" onclick="P()">
+    		<number>
+            15
+            </number>
+            <element>
+            P
+            </element>
+            <element_name>
+            Phosphorus
+            </element_name>
+            <atomic_number>
+            30.974
+            </atomic_number>
+    	</div></td>
+    <td><div class="blue" onclick="S()">
+    		<number>
+            16
+            </number>
+            <element>
+            S
+            </element>
+            <element_name>
+            Sulfur
+            </element_name>
+            <atomic_number>
+            32.066
+            </atomic_number>
+    	</div></td>
+    <td><div class="lavender" onclick="Cl()">
+    		<number>
+            17
+            </number>
+            <element>
+            Cl
+            </element>
+            <element_name>
+            Chlorine
+            </element_name>
+            <atomic_number>
+            35.453
+            </atomic_number>
+    	</div></td>
+    <td><div class="violet" onclick="Ar()">
+    		<number>
+            18
+            </number>
+            <element>
+            A
+            </element>
+            <element_name>
+            Argon
+            </element_name>
+            <atomic_number>
+            39.948
+            </atomic_number>
+    	</div></td>
+  </tr>
+  <tr>
+	<td><div class="red" onclick="K()">
+    		<number>
+            19
+            </number>
+            <element>
+            K
+            </element>
+            <element_name>
+            Potassium
+            </element_name>
+            <atomic_number>
+            39.098
+            </atomic_number>
+    	</div></td>
+    <td><div class="orange" onclick="Ca()">
+    		<number>
+            20
+            </number>
+            <element>
+            Ca
+            </element>
+            <element_name>
+            Calcium
+            </element_name>
+            <atomic_number>
+            40.078
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Sc()">
+    		<number>
+            21
+            </number>
+            <element>
+            Sc
+            </element>
+            <element_name>
+            Scandium
+            </element_name>
+            <atomic_number>
+            44.956
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Ti()">
+    		<number>
+            22
+            </number>
+            <element>
+            Ti
+            </element>
+            <element_name>
+            Titanium
+            </element_name>
+            <atomic_number>
+            47.867
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="V()">
+    		<number>
+            23
+            </number>
+            <element>
+            V
+            </element>
+            <element_name>
+            Vanadium
+            </element_name>
+            <atomic_number>
+            50.942
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Cr()">
+    		<number>
+            24
+            </number>
+            <element>
+            Cr
+            </element>
+            <element_name>
+            Chromium
+            </element_name>
+            <atomic_number>
+            51.996
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Mn()">
+    		<number>
+            25
+            </number>
+            <element>
+            Mn
+            </element>
+            <element_name>
+            Maganese
+            </element_name>
+            <atomic_number>
+            54.938
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Fe()">
+    		<number>
+            26
+            </number>
+            <element>
+            Fe
+            </element>
+            <element_name>
+            Iron
+            </element_name>
+            <atomic_number>
+            55.845
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Co()">
+    		<number>
+            27
+            </number>
+            <element>
+            Co
+            </element>
+            <element_name>
+            Cobalt
+            </element_name>
+            <atomic_number>
+            58.933
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Ni()">
+    		<number>
+            28
+            </number>
+            <element>
+            Ni
+            </element>
+            <element_name>
+            Nickel
+            </element_name>
+            <atomic_number>
+            58.693
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Cu()">
+    		<number>
+            29
+            </number>
+            <element>
+            Cu
+            </element>
+            <element_name>
+            Copper
+            </element_name>
+            <atomic_number>
+            63.546
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Zn()">
+    		<number>
+            30
+            </number>
+            <element>
+            Zn
+            </element>
+            <element_name>
+            Zinc
+            </element_name>
+            <atomic_number>
+            65.38
+            </atomic_number>
+    	</div></td>
+    <td><div class="green" onclick="Ga()">
+    		<number>
+            31
+            </number>
+            <element>
+            Ga
+            </element>
+            <element_name>
+            Gallium
+            </element_name>
+            <atomic_number>
+            69.723
+            </atomic_number>
+    	</div></td>
+    <td><div class="cyan" onclick="Ge()">
+    		<number>
+            32
+            </number>
+            <element>
+            Ge
+            </element>
+            <element_name>
+            Germanium
+            </element_name>
+            <atomic_number>
+            72.631
+            </atomic_number>
+    	</div></td>
+    <td><div class="cyan" onclick="As()">
+    		<number>
+            33
+            </number>
+            <element>
+            As
+            </element>
+            <element_name>
+            Arsenic
+            </element_name>
+            <atomic_number>
+            74.922
+            </atomic_number>
+    	</div></td>
+    <td><div class="blue" onclick="Se()">
+    		<number>
+            34
+            </number>
+            <element>
+            Se
+            </element>
+            <element_name>
+            Selenium
+            </element_name>
+            <atomic_number>
+            78.972
+            </atomic_number>
+    	</div></td>
+    <td><div class="lavender" onclick="Br()">
+    		<number>
+            35
+            </number>
+            <element>
+            Br
+            </element>
+            <element_name>
+            Bromine
+            </element_name>
+            <atomic_number>
+            79.904
+            </atomic_number>
+    	</div></td>
+    <td><div class="violet" onclick="Kr()">
+    		<number>
+            36
+            </number>
+            <element>
+            Kr
+            </element>
+            <element_name>
+            Krypton
+            </element_name>
+            <atomic_number>
+            83.798
+            </atomic_number>
+    	</div></td>
+  </tr>
+  <tr>
+	<td><div class="red" onclick="Rb()">
+    		<number>
+            37
+            </number>
+            <element>
+            Rb
+            </element>
+            <element_name>
+            Rubidium
+            </element_name>
+            <atomic_number>
+            85.468
+            </atomic_number>
+    	</div></td>
+    <td><div class="orange" onclick="Sr()">
+    		<number>
+            38
+            </number>
+            <element>
+            Sr
+            </element>
+            <element_name>
+            Strontium
+            </element_name>
+            <atomic_number>
+            88.906
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Y()">
+    		<number>
+            39
+            </number>
+            <element>
+            Y
+            </element>
+            <element_name>
+            Yttrium
+            </element_name>
+            <atomic_number>
+            88.906
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Zr()">
+    		<number>
+            40
+            </number>
+            <element>
+            Zr
+            </element>
+            <element_name>
+            Zirrconium
+            </element_name>
+            <atomic_number>
+            91.224
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Nb()">
+    		<number>
+            41
+            </number>
+            <element>
+            Nb
+            </element>
+            <element_name>
+            Niobium
+            </element_name>
+            <atomic_number>
+            92.906
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Mo()">
+    		<number>
+            42
+            </number>
+            <element>
+            Mo
+            </element>
+            <element_name>
+            Molyndenum
+            </element_name>
+            <atomic_number>
+            95.96
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Tc()">
+    		<number>
+            43
+            </number>
+            <element>
+            Tc
+            </element>
+            <element_name>
+            Technetium
+            </element_name>
+            <atomic_number>
+            98.9062
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Ru()">
+    		<number>
+            44
+            </number>
+            <element>
+            Ru
+            </element>
+            <element_name>
+            Ruthenium
+            </element_name>
+            <atomic_number>
+            101.07
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Rh()">
+    		<number>
+            45
+            </number>
+            <element>
+            Rh
+            </element>
+            <element_name>
+            Rhodium
+            </element_name>
+            <atomic_number>
+            102.906
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Pd()">
+    		<number>
+            46
+            </number>
+            <element>
+            Pd
+            </element>
+            <element_name>
+            Palladium
+            </element_name>
+            <atomic_number>
+            106.42
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Ag()">
+    		<number>
+            47
+            </number>
+            <element>
+            Ag
+            </element>
+            <element_name>
+            Silver
+            </element_name>
+            <atomic_number>
+            107.868
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Cd()">
+    		<number>
+            48
+            </number>
+            <element>
+            Cd
+            </element>
+            <element_name>
+            Cadmium
+            </element_name>
+            <atomic_number>
+            112.411
+            </atomic_number>
+    	</div></td>
+    <td><div class="green" onclick="In()">
+    		<number>
+            49
+            </number>
+            <element>
+            In
+            </element>
+            <element_name>
+            Indium
+            </element_name>
+            <atomic_number>
+            114.818
+            </atomic_number>
+    	</div></td>
+    <td><div class="green" onclick="Sn()">
+    		<number>
+            50
+            </number>
+            <element>
+            Sn
+            </element>
+            <element_name>
+            Tin
+            </element_name>
+            <atomic_number>
+            118.711
+            </atomic_number>
+    	</div></td>
+    <td><div class="cyan" onclick="Sb()">
+    		<number>
+            51
+            </number>
+            <element>
+            Sb
+            </element>
+            <element_name>
+            Antimony
+            </element_name>
+            <atomic_number>
+            121.760
+            </atomic_number>
+    	</div></td>
+    <td><div class="cyan" onclick="Te()">
+    		<number>
+            52
+            </number>
+            <element>
+            Te
+            </element>
+            <element_name>
+            Tellurium
+            </element_name>
+            <atomic_number>
+            127.6
+            </atomic_number>
+    	</div></td>
+    <td><div class="lavender" onclick="I()">
+    		<number>
+            53
+            </number>
+            <element>
+            I
+            </element>
+            <element_name>
+            Iodine
+            </element_name>
+            <atomic_number>
+            126.904
+            </atomic_number>
+    	</div></td>
+    <td><div class="violet" onclick="Xe()">
+    		<number>
+            54
+            </number>
+            <element>
+            Xe
+            </element>
+            <element_name>
+            Xenon
+            </element_name>
+            <atomic_number>
+            131.294
+            </atomic_number>
+    	</div></td>
+  </tr>
+  <tr>
+	<td><div class="red" onclick="Cs()">
+    		<number>
+            55
+            </number>
+            <element>
+            Cs
+            </element>
+            <element_name>
+            Cesium
+            </element_name>
+            <atomic_number>
+            132.91
+            </atomic_number>
+    	</div></td>
+    <td><div class="orange" onclick="Ba()">
+    		<number>
+            56
+            </number>
+            <element>
+            Ba
+            </element>
+            <element_name>
+            Barium
+            </element_name>
+            <atomic_number>
+            137.33
+            </atomic_number>
+    	</div></td>
+    <td><div class="pink">
+    		<number>
+            57-71
+            </number>
+            <element>
+            &nbsp;
+            </element>
+            <element_name>
+            &nbsp;
+            </element_name>
+            <atomic_number>
+            &nbsp;
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Hf()">
+    		<number>
+            72
+            </number>
+            <element>
+            Hf
+            </element>
+            <element_name>
+            Hafnium
+            </element_name>
+            <atomic_number>
+            178.49
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Ta()">
+    		<number>
+            73
+            </number>
+            <element>
+            Ta
+            </element>
+            <element_name>
+            Tantalum
+            </element_name>
+            <atomic_number>
+            180.95
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="W()">
+    		<number>
+            74
+            </number>
+            <element>
+            W
+            </element>
+            <element_name>
+            Tungsten
+            </element_name>
+            <atomic_number>
+            183.84
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Re()">
+    		<number>
+            75
+            </number>
+            <element>
+            Re
+            </element>
+            <element_name>
+            Rhenium
+            </element_name>
+            <atomic_number>
+            186.21
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Os()">
+    		<number>
+            76
+            </number>
+            <element>
+            Os
+            </element>
+            <element_name>
+            Osmium
+            </element_name>
+            <atomic_number>
+            190.23
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Ir()">
+    		<number>
+            77
+            </number>
+            <element>
+            Ir
+            </element>
+            <element_name>
+            Iridium
+            </element_name>
+            <atomic_number>
+            192.22
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Pt()">
+    		<number>
+            78
+            </number>
+            <element>
+            Pt
+            </element>
+            <element_name>
+            Platinum
+            </element_name>
+            <atomic_number>
+            195.08
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Au()">
+    		<number>
+            79
+            </number>
+            <element>
+            Au
+            </element>
+            <element_name>
+            Gold
+            </element_name>
+            <atomic_number>
+            196.97
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Hg()">
+    		<number>
+            80
+            </number>
+            <element>
+            Hg
+            </element>
+            <element_name>
+            Mercury
+            </element_name>
+            <atomic_number>
+            200.59
+            </atomic_number>
+    	</div></td>
+    <td><div class="green" onclick="Tl()">
+    		<number>
+            81
+            </number>
+            <element>
+            Tl
+            </element>
+            <element_name>
+            Thallium
+            </element_name>
+            <atomic_number>
+            204.38
+            </atomic_number>
+    	</div></td>
+    <td><div class="green" onclick="Pb()">
+    		<number>
+            82
+            </number>
+            <element>
+            Pb
+            </element>
+            <element_name>
+            Lead
+            </element_name>
+            <atomic_number>
+            207.2
+            </atomic_number>
+    	</div></td>
+    <td><div class="green" onclick="Bi()">
+    		<number>
+            83
+            </number>
+            <element>
+            Bi
+            </element>
+            <element_name>
+            Bismuth
+            </element_name>
+            <atomic_number>
+            208.98
+            </atomic_number>
+    	</div></td>
+    <td><div class="cyan" onclick="Po()">
+    		<number>
+            84
+            </number>
+            <element>
+            Po
+            </element>
+            <element_name>
+            Polonium
+            </element_name>
+            <atomic_number>
+            208.982
+            </atomic_number>
+    	</div></td>
+    <td><div class="lavender" onclick="At()">
+    		<number>
+            85
+            </number>
+            <element>
+            At
+            </element>
+            <element_name>
+            Astatine
+            </element_name>
+            <atomic_number>
+            209.987
+            </atomic_number>
+    	</div></td>
+    <td><div class="violet" onclick="Rn()">
+    		<number>
+            86
+            </number>
+            <element>
+            Rn
+            </element>
+            <element_name>
+            Radon
+            </element_name>
+            <atomic_number>
+            222.018
+            </atomic_number>
+    	</div></td>
+  </tr>
+  <tr>
+	<td><div class="red" onclick="Fr()">
+    		<number>
+            87
+            </number>
+            <element>
+            Fr
+            </element>
+            <element_name>
+            Francium
+            </element_name>
+            <atomic_number>
+            223.020
+            </atomic_number>
+    	</div></td>
+    <td><div class="orange" onclick="Ra()">
+    		<number>
+            88
+            </number>
+            <element>
+            Ra
+            </element>
+            <element_name>
+            Radium
+            </element_name>
+            <atomic_number>
+            226.025
+            </atomic_number>
+    	</div></td>
+    <td><div class="magenta">
+    		<number>
+            89-103
+            </number>
+            <element>
+            <br>
+            </element>
+            <element_name>
+            <br>
+            </element_name>
+            <atomic_number>
+            <br>
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Rf()">
+    		<number>
+            104
+            </number>
+            <element>
+            Rf
+            </element>
+            <element_name>
+            Rutherfordium
+            </element_name>
+            <atomic_number>
+            261
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Db()">
+    		<number>
+            105
+            </number>
+            <element>
+            Db
+            </element>
+            <element_name>
+            Dubnium
+            </element_name>
+            <atomic_number>
+            262
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Sg()">
+    		<number>
+            106
+            </number>
+            <element>
+            Sg
+            </element>
+            <element_name>
+            Seaborgium
+            </element_name>
+            <atomic_number>
+            266
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Bh()">
+    		<number>
+            107
+            </number>
+            <element>
+            Bh
+            </element>
+            <element_name>
+            Bohrium
+            </element_name>
+            <atomic_number>
+            264
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Hs()">
+    		<number>
+            108
+            </number>
+            <element>
+            Hs
+            </element>
+            <element_name>
+            Hassium
+            </element_name>
+            <atomic_number>
+            269
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Mt()">
+    		<number>
+            109
+            </number>
+            <element>
+            Mt
+            </element>
+            <element_name>
+            Meitnerium
+            </element_name>
+            <atomic_number>
+            268
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Ds()">
+    		<number>
+            110
+            </number>
+            <element>
+            Ds
+            </element>
+            <element_name>
+            Damstadtium
+            </element_name>
+            <atomic_number>
+            269
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Rg()">
+    		<number>
+            111
+            </number>
+            <element>
+            Rg
+            </element>
+            <element_name>
+            Roentgenium
+            </element_name>
+            <atomic_number>
+            272
+            </atomic_number>
+    	</div></td>
+    <td><div class="yellow" onclick="Cn()">
+    		<number>
+            112
+            </number>
+            <element>
+            Cn
+            </element>
+            <element_name>
+            Copernicium
+            </element_name>
+            <atomic_number>
+            277
+            </atomic_number>
+    	</div></td>
+    <td><div class="green" onclick="Nh()">
+    		<number>
+            113
+            </number>
+            <element>
+            Nh
+            </element>
+            <element_name>
+            Nihonium
+            </element_name>
+            <atomic_number>
+            unknown
+            </atomic_number>
+    	</div></td>
+    <td><div class="green" onclick="Fl()">
+    		<number>
+            114
+            </number>
+            <element>
+            Fl
+            </element>
+            <element_name>
+            Fierovium
+            </element_name>
+            <atomic_number>
+            289
+            </atomic_number>
+    	</div></td>
+    <td><div class="green" onclick="Mc()">
+    		<number>
+            115
+            </number>
+            <element>
+            Mc
+            </element>
+            <element_name>
+            Moscovium
+            </element_name>
+            <atomic_number>
+            unknown
+            </atomic_number>
+    	</div></td>
+    <td><div class="green" onclick="Lv()">
+    		<number>
+            116
+            </number>
+            <element>
+            Lv
+            </element>
+            <element_name>
+            Livermorium
+            </element_name>
+            <atomic_number>
+            298
+            </atomic_number>
+    	</div></td>
+    <td><div class="lavender" onclick="Ts()">
+    		<number>
+            117
+            </number>
+            <element>
+            Ts
+            </element>
+            <element_name>
+            Tennessine
+            </element_name>
+            <atomic_number>
+            unknown
+            </atomic_number>
+    	</div></td>
+    <td><div class="violet" onclick="Og()">
+    		<number>
+            118
+            </number>
+            <element>
+            Og
+            </element>
+            <element_name>
+            Oganesson
+            </element_name>
+            <atomic_number>
+            unknown
+            </atomic_number>
+    	</div></td>
+  </tr>
+
+</table>
+
+
+<table class="second">
+  <tr>
+    <td><div class="pink" onclick="La()">
+    		<number>
+            57
+            </number>
+            <element>
+            La
+            </element>
+            <element_name>
+            Lanthanum
+            </element_name>
+            <atomic_number>
+            138.905
+            </atomic_number>
+    	</div></td>
+    <td><div class="pink" onclick="Ce()">
+    		<number>
+            58
+            </number>
+            <element>
+            Ce
+            </element>
+            <element_name>
+            Cerium
+            </element_name>
+            <atomic_number>
+            140.116
+            </atomic_number>
+    	</div></td>
+    <td><div class="pink" onclick="Pr()">
+    		<number>
+            59
+            </number>
+            <element>
+            Pr
+            </element>
+            <element_name>
+            Praseodymium
+            </element_name>
+            <atomic_number>
+            140.908
+            </atomic_number>
+    	</div></td>
+    <td><div class="pink" onclick="Nd()">
+    		<number>
+            60
+            </number>
+            <element>
+            Nd
+            </element>
+            <element_name>
+            Neodymium
+            </element_name>
+            <atomic_number>
+            144.242
+            </atomic_number>
+    	</div></td>
+    <td><div class="pink" onclick="Pm()">
+    		<number>
+            61
+            </number>
+            <element>
+            Pm
+            </element>
+            <element_name>
+            Promethium
+            </element_name>
+            <atomic_number>
+            144.913
+            </atomic_number>
+    	</div></td>
+    <td><div class="pink" onclick="Sm()">
+    		<number>
+            62
+            </number>
+            <element>
+            Sm
+            </element>
+            <element_name>
+            Samarium
+            </element_name>
+            <atomic_number>
+            150.36
+            </atomic_number>
+    	</div></td>
+    <td><div class="pink" onclick="Eu()">
+    		<number>
+            63
+            </number>
+            <element>
+            Eu
+            </element>
+            <element_name>
+            Europium
+            </element_name>
+            <atomic_number>
+            151.964
+            </atomic_number>
+    	</div></td>
+    <td><div class="pink" onclick="Gd()">
+    		<number>
+            64
+            </number>
+            <element>
+            Gd
+            </element>
+            <element_name>
+            Gadolinium
+            </element_name>
+            <atomic_number>
+            157.25
+            </atomic_number>
+    	</div></td>
+    <td><div class="pink" onclick="Tb()">
+    		<number>
+            65
+            </number>
+            <element>
+            Tb
+            </element>
+            <element_name>
+            Terbium
+            </element_name>
+            <atomic_number>
+            158.925
+            </atomic_number>
+    	</div></td>
+    <td><div class="pink" onclick="Dy()">
+    		<number>
+            66
+            </number>
+            <element>
+            Dy
+            </element>
+            <element_name>
+            Dysprosium
+            </element_name>
+            <atomic_number>
+            162.5
+            </atomic_number>
+    	</div></td>
+    <td><div class="pink" onclick="Ho()">
+    		<number>
+            67
+            </number>
+            <element>
+            Ho
+            </element>
+            <element_name>
+            Holmium
+            </element_name>
+            <atomic_number>
+            164.930
+            </atomic_number>
+    	</div></td>
+    <td><div class="pink" onclick="Er()">
+    		<number>
+            68
+            </number>
+            <element>
+            Er
+            </element>
+            <element_name>
+            Erbium
+            </element_name>
+            <atomic_number>
+            167.259
+            </atomic_number>
+    	</div></td>
+    <td><div class="pink" onclick="Tm()">
+    		<number>
+            69
+            </number>
+            <element>
+            Tm
+            </element>
+            <element_name>
+            Thulium
+            </element_name>
+            <atomic_number>
+            168.934
+            </atomic_number>
+    	</div></td>
+    <td><div class="pink" onclick="Yb()">
+    		<number>
+            70
+            </number>
+            <element>
+            Yb
+            </element>
+            <element_name>
+            Ytterbium
+            </element_name>
+            <atomic_number>
+            173.055
+            </atomic_number>
+    	</div></td>
+    <td><div class="pink" onclick="Lu()">
+    		<number>
+            71
+            </number>
+            <element>
+            Lu
+            </element>
+            <element_name>
+            Lutetium
+            </element_name>
+            <atomic_number>
+            174.967
+            </atomic_number>
+    	</div></td>
+  </tr>
+  <tr>
+    <td><div class="magenta" onclick="Ac()">
+    		<number>
+            89
+            </number>
+            <element>
+            Ac
+            </element>
+            <element_name>
+            Actinium
+            </element_name>
+            <atomic_number>
+            227.028
+            </atomic_number>
+    	</div></td>
+    <td><div class="magenta" onclick="Th()">
+    		<number>
+            90
+            </number>
+            <element>
+            Th
+            </element>
+            <element_name>
+            Thorium
+            </element_name>
+            <atomic_number>
+            232.038
+            </atomic_number>
+    	</div></td>
+    <td><div class="magenta" onclick="Pa()">
+    		<number>
+            91
+            </number>
+            <element>
+            Pa
+            </element>
+            <element_name>
+            Protactinium
+            </element_name>
+            <atomic_number>
+            231.036
+            </atomic_number>
+    	</div></td>
+    <td><div class="magenta" onclick="U()">
+    		<number>
+            92
+            </number>
+            <element>
+            U
+            </element>
+            <element_name>
+            Uranium
+            </element_name>
+            <atomic_number>
+            238.029
+            </atomic_number>
+    	</div></td>
+    <td><div class="magenta" onclick="Np()">
+    		<number>
+            93
+            </number>
+            <element>
+            Np
+            </element>
+            <element_name>
+            Neptunium
+            </element_name>
+            <atomic_number>
+            237.048
+            </atomic_number>
+    	</div></td>
+    <td><div class="magenta" onclick="Pu()">
+    		<number>
+            94
+            </number>
+            <element>
+            Pu
+            </element>
+            <element_name>
+            Plutonium
+            </element_name>
+            <atomic_number>
+            244.064
+            </atomic_number>
+    	</div></td>
+    <td><div class="magenta" onclick="Am()">
+    		<number>
+            95
+            </number>
+            <element>
+            Am
+            </element>
+            <element_name>
+            Americium
+            </element_name>
+            <atomic_number>
+            243.061
+            </atomic_number>
+    	</div></td>
+    <td><div class="magenta" onclick="Cm()">
+    		<number>
+            96
+            </number>
+            <element>
+            Cm
+            </element>
+            <element_name>
+            Curium
+            </element_name>
+            <atomic_number>
+            247.070
+            </atomic_number>
+    	</div></td>
+    <td><div class="magenta" onclick="Bk()">
+    		<number>
+            97
+            </number>
+            <element>
+            Bk
+            </element>
+            <element_name>
+            Berkelium
+            </element_name>
+            <atomic_number>
+            247.070
+            </atomic_number>
+    	</div></td>
+    <td><div class="magenta" onclick="Cf()">
+    		<number>
+            98
+            </number>
+            <element>
+            Cf
+            </element>
+            <element_name>
+            Californium
+            </element_name>
+            <atomic_number>
+            251.080
+            </atomic_number>
+    	</div></td>
+    <td><div class="magenta" onclick="Es()">
+    		<number>
+            99
+            </number>
+            <element>
+            Es
+            </element>
+            <element_name>
+            Einsteinium
+            </element_name>
+            <atomic_number>
+            254
+            </atomic_number>
+    	</div></td>
+    <td><div class="magenta" onclick="Fm()">
+    		<number>
+            100
+            </number>
+            <element>
+            Fm
+            </element>
+            <element_name>
+            Fermium
+            </element_name>
+            <atomic_number>
+            257.095
+            </atomic_number>
+    	</div></td>
+    <td><div class="magenta" onclick="Md()">
+    		<number>
+            101
+            </number>
+            <element>
+            Md
+            </element>
+            <element_name>
+            Mendelevium
+            </element_name>
+            <atomic_number>
+            258.1
+            </atomic_number>
+    	</div></td>
+    <td><div class="magenta" onclick="No()">
+    		<number>
+            102
+            </number>
+            <element>
+            No
+            </element>
+            <element_name>
+            Nobelium
+            </element_name>
+            <atomic_number>
+            259.101
+            </atomic_number>
+    	</div></td>
+    <td><div class="magenta" onclick="Lr()">
+    		<number>
+            103
+            </number>
+            <element>
+            Lr
+            </element>
+            <element_name>
+            Lawrencium
+            </element_name>
+            <atomic_number>
+            262
+            </atomic_number>
+    	</div></td>
+  </tr>
+</table>
+
+<table class="third">
+  <tr class="third_row">
+    <td><div class="third_div red">
+            <element_name class="element_mini">
+            Alkali
+            </element_name>
+            <element_name class="element_mini">
+            Metal
+            </element_name>
+    	</div></td>
+    <td><div class="third_div orange">
+            <element_name class="element_mini">
+            Alkaline
+            </element_name>
+            <element_name class="element_mini">
+            Earth
+            </element_name>
+    	</div></td>
+    <td><div class="third_div yellow">
+            <element_name class="element_mini">
+            Transition
+            </element_name>
+            <element_name class="element_mini">
+            Metal
+            </element_name>
+    	</div></td>
+    <td><div class="third_div green">
+            <element_name class="element_mini">
+            Basic
+            </element_name>
+            <element_name class="element_mini">
+            Metal
+            </element_name>
+    	</div></td>
+    <td><div class="third_div cyan">
+            <element_name class="single_line element_mini">
+            Semimetal
+            </element_name>
+    	</div></td>
+    <td><div class="third_div blue">
+            <element_name class="single_line element_mini">
+            Nonmetal
+            </element_name>
+    	</div></td>
+    <td><div class="third_div lavender">
+            <element_name class="single_line element_mini">
+            Halogen
+            </element_name>
+    	</div></td>
+    <td><div class="third_div violet">
+            <element_name class="element_mini">
+            Noble
+            </element_name>
+            <element_name class="element_mini">
+            Gas
+            </element_name>
+    	</div></td>
+    <td><div class="third_div pink">
+            <element_name class="single_line element_mini">
+            Lanthonide
+            </element_name>
+
+    	</div></td>
+    <td><div class="third_div magenta">
+            <element_name class="single_line element_mini">
+            Actinide
+            </element_name>
+
+    	</div></td>
+
+  </tr>
+</table>
+
+</body>
+</html>
