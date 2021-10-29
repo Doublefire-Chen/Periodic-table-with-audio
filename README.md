@@ -1,0 +1,2 @@
+# Periodic-table-with-audio
+This is a periodic table, you touch it, it can speak.Main code is coming from "https://github.com/KyleFDowney/Periodic_table.git", the audio file is coming from "http://pronounceeverything.com/Periodic%20Table%20of%20Elements/Periodic%20Table%20of%20Elements_100.htm". This is a non-profit project, it is only used for learning and communication, and it is forbidden to be used in any commercial activities
